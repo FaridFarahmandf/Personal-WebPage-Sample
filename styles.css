@@ -1,0 +1,660 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+    max-width: 100%;
+}
+header nav .container-nav{
+    list-style: none;
+    box-shadow: 0 10px 10px rgb(180, 180, 180);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+header nav .container-nav li:first-child{
+    margin-left: 20px;
+}
+header nav .container-nav li ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+header nav .container-nav li ul li a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+header nav .container-nav li ul li a:hover{
+    color:#8491FF;
+}
+
+.homepage{
+    color: #8491FF !important;
+}
+
+.blog-nav, .page-nav, .sub-sub-page-nav{
+    position: relative;
+    overflow: hidden;
+}
+.blog-nav:hover, .page-nav:hover, .sub-sub-page-nav:hover{
+    overflow: visible;
+}
+.sub-blog-nav , .sub-page-nav, .sub-sub-items{
+    background-color: #fff;
+    position: absolute;
+    right: 0%;
+    width: 200px;
+}
+.sub-blog-nav li, .sub-page-nav li{
+    margin: 0 !important;
+    width: 100%;
+}
+.sub-blog-nav li a, .sub-page-nav li a{
+    padding: 12px !important;
+    margin-left: 4px;
+    font-size: 0.8em !important;
+}
+.down-caret{
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+.sub-page-nav{
+    display: block !important;
+}
+
+.level2-sub-nav{
+    display: flex !important;
+    justify-content: space-between;
+}
+.sub-sub-items{
+    position: absolute;
+    left: -100%;
+    top: 0;
+    display: block !important;
+}
+/* main */
+
+main{
+    background-color: #f9f9ff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .introduce{
+    width: 40%;
+}
+main .image{
+    width: 40%;
+}
+main .introduce p{
+    letter-spacing: 5px;
+    margin: 20px 0;
+    font-size: 0.8em;
+}
+main .introduce h1{
+    font-size: 3em;
+}
+main .introduce span{
+    font-size: 0.9em;
+    width: 80%;
+    color: #979797;
+    margin: 20px 0;
+    display: block;
+}
+main .introduce button{
+    padding: 12px 35px;
+    color: white;
+    background-color: #7D98FE;
+    border:none;
+}
+
+/* about */
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 80px 0;
+}
+.about .about-introduce{
+    width: 45%;
+}
+.about .about-introduce p{
+    letter-spacing: 5px;
+    margin: 30px 0;
+}
+.about .about-introduce h2{
+    font-size: 3em;
+}
+.about .about-introduce span{
+    color: #979797;
+    margin: 30px 0;
+    display: block;
+    width: 70%;
+    line-height: 25px;
+}
+.about .about-introduce button{
+    padding: 12px 35px;
+    color: white;
+    background-color: #7D98FE;
+    border:none;
+}
+/*services*/
+.services{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.services h2{
+    font-size: 2em;
+    margin: 5px 0;
+}
+.services>p{
+    color: #979797;
+    margin: 20px auto;
+    width: 48%;
+    margin-bottom: 100px;
+    
+}
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service div{
+    width: 30%;
+    margin: 0 1.6%;
+    cursor: pointer;
+}
+.service div i{
+    font-size: 2em;
+    margin: 0 0 40px 0;
+}
+.service div h3{
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+.service div p{
+    color:#979797;
+    font-size: 1em;
+    margin: 0 auto;
+    width: 80%;
+    line-height: 20px;
+}
+.service div:first-child, .service div:nth-child(2),.service div:nth-child(3) {
+    margin-bottom: 50px;
+}
+.service div:hover i{
+    color: #8491FF;
+    transition: 0.2s;
+}
+.service div:hover .header-icon{
+    color: #8491FF;
+    transition: 0.5s;
+}
+
+/* analytic */
+.analytic{
+    width: 100%;
+    background-color: #6BB1FD;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 150px 0;
+}
+.analytic div{
+    color: white;
+    padding: 150px 0;
+}
+.analytic div p{
+    font-size: 2em;
+    font-weight: bold;
+}
+.analytic div span{
+    font-size: 0.9em;
+}
+
+
+
+/* project */
+.project{
+    text-align: center;
+}
+.project h2{
+    font-size: 2.2em;
+    word-spacing: 10px;
+    margin: 10px 0;
+}
+.project>p{
+    color: #979797;
+    margin-bottom: 40px;
+}
+.project ul{
+    list-style: none;
+}
+.project ul li{
+    display: inline-block;
+    margin: 10px;
+    font-size: 0.7em;
+}
+.project-detail{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 70px auto;
+}
+.project-detail div{
+    margin: 30px 0;
+}
+.project-detail div h3{
+    margin: 10px 0;
+}
+.project-detail div p{
+    color: #979797;
+    font-size: 0.8em;
+}
+
+/* feedback */
+
+.feedback{
+    background-color: #f9f9ff;
+}
+.feedback h2, .feedback>p{
+    text-align: center; 
+}
+.feedback h2{
+    padding-top: 100px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.feedback>p {
+    color: #979797;
+}
+.feedbacks{
+    width: 90%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feedbacks>div{
+    background-color: #fff;
+    width: 45%;
+    margin: 50px 0;
+    box-shadow: 1px 1px 10px #909090;
+}
+.feedbacks>div div{
+    display: flex;
+    justify-content: space-around;
+}
+.feedbacks>div div img{
+    height: 40px;
+    width: 40px;
+    margin: 30px 20px;
+}
+.feedbacks>div div p{
+    width: 80%;
+    margin: 20px 0;
+    line-height: 30px;
+    color: #979797;
+    font-size: 0.9em;
+}
+.feedbacks>div h4{
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+.feedbacks>div span{
+    margin-left: 100px;
+    color: #979797;
+    font-size: 0.9em;
+    padding-bottom: 30px;
+    display: block;
+}
+
+/* purchase items*/
+.purchase h2{
+    text-align: center;
+    font-size: 2.2em;
+    margin-top: 100px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.purchase>p{
+    font-size: 0.9em;
+    color: #979797;
+    text-align:center;
+}
+.purchase .buy-items{
+    background-color: #f9f9ff;
+    margin: 70px auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.purchase .buy-items div{
+    width: 21%;
+    text-align: center;
+    padding: 20px;
+} 
+.purchase .buy-items div .circle{
+    margin: 50px auto;
+    width: 70px;
+}
+.purchase .buy-items div .circle p{
+    background-color: #edefff;
+    outline:30px solid #E2E5FF;
+    border-radius: 50%;
+    height: 70px;
+    line-height: 70px;
+    font-size: 2em;
+}
+.purchase .buy-items div h3{
+    margin: 10px 0;
+}
+.purchase .buy-items div span{
+    color: #909090;
+    font-size: 1em;
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+.purchase .buy-items div>p{
+    margin: 10px 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+.purchase .buy-items div button{
+    background-color: #fff;
+    border: none;
+    padding: 13px 90px;
+    margin: 20px auto;
+    display: none;
+    font-weight: bold;
+}
+.purchase .buy-items div:hover{
+    background-color: #8491FF;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all ease-in-out 0.6s;
+}
+.purchase .buy-items div:hover .circle>p{
+    background-color: #8491FF;
+    outline-color: #cbd0fc;
+    color: #fff;
+}
+.purchase .buy-items div:hover h3{
+    color: white;
+}
+.purchase .buy-items div:hover span{
+    color: white;
+}
+.purchase .buy-items div:hover .price{
+    display: none;
+}
+.purchase .buy-items div:hover button{
+    display: block;
+}
+
+/* latest posts */
+.posts{
+    background-color: #f9f9ff;
+}
+.posts h2{
+    text-align: center;
+    font-size: 2.2em;
+    padding: 100px 0 10px 0;
+}
+.posts>p{
+    text-align: center;
+    font-size: 0.9em;
+    color: #909090;
+    width: 50%;
+    margin: 0 auto;
+}
+.posts .post{
+    margin: 50px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.posts .post>div{
+    width: 31%;
+    margin: 1%;
+    overflow: hidden;
+}
+.posts .post div .post-image-container{
+    height: 230px;
+    overflow: hidden;
+}
+.posts .post div>img{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.posts .post div>ul{
+    width: 100%;
+    list-style-type: none;
+    border-bottom: 1px solid #ececec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.posts .post div>ul li>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.posts .post div>ul li:last-child ul li{
+   margin: 20px 10px; 
+}
+
+.posts .post ul li i{
+    color: #909090;
+}
+.posts .post div h4{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.posts .post div>p{
+    width: 80%;
+    margin-bottom: 150px;
+}
+.posts .post div:hover .post-image{
+    cursor: pointer;
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+
+/* premium*/
+.premium{
+    background-color: #64B9FC;
+}
+.premium ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 70px;
+}
+/*footer*/
+footer{
+    background:#04091E;
+}
+footer>div{
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+footer div>div:first-child{
+    width: 35%;
+    margin-left: 1%;
+}
+footer div>div:nth-child(2){
+    width: 35%;
+}
+footer div>div:last-child{
+    width: 25%;
+}
+footer div>div h3{
+    color: white;
+    font-size: 1.2em;
+    margin: 20px;
+}
+footer div>div p{
+    color: #909090;
+    font-size: 1em;
+    margin: 20px;
+    line-height: 20px;
+}
+footer div  p span{
+    color: #8491FF;
+}
+footer div form{
+    margin: 0 20px;
+}
+footer div  form input{
+    padding: 10px 60px;
+    margin: 20px 0;
+
+}
+footer div  form button{
+    padding: 12px;
+    background-color: #8491FF;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+footer div div div>i:first-child{
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+footer div div div>i{
+    color: white;
+}
+
+/*responsive*/
+@media  screen and (max-width:950px){
+    header{
+        position: static;
+    } 
+    header nav .container-nav li:first-child{
+        display: none;
+    }
+    .down-caret, .blog-nav, .page-nav{
+        display: none;
+    }
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main .introduce{
+        width: 80%;
+        padding: 50px 0;
+    }
+    main .image{
+        width:100%;
+        text-align: center;
+    }
+    main .image img{
+        width: 60%;
+    }
+    .about .about-image{
+        text-align: center;
+    }
+    .about .about-image img{
+        width: 80%;
+    }
+    .about .about-introduce{
+        width: 85%;
+    }
+    .about .about-introduce h2{
+        font-size: 1em;
+    }
+    .about .about-introduce p{
+        font-size: 0.8em;
+    }
+    .about .about-introduce span{
+        width: 100%;
+    }
+    .services{
+        width: 100%;
+        text-align: center;
+    }
+    .services h2{
+        font-size: 3em;
+    }
+    .services>p{
+        width: 100%;
+    }
+    .service div{
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .analytic div{
+        width: 100%;
+        padding: 50px;
+    }
+    .analytic div:first-child{
+        padding-top: 100px;
+    }
+    .analytic div:last-child{
+        padding-bottom: 100px;
+    }
+    .feedbacks{
+        width: 100%;
+    }
+    .feedbacks>div{
+        width: 100%;
+    }
+    .purchase .buy-items div{
+        width: 100%;
+    } 
+    .posts .post>div{
+        width: 100%;
+    }
+    .premium ul li:nth-child(3), .premium ul li:nth-child(4), .premium ul li:last-child{
+        display: none;
+    }
+    footer div>div:first-child{
+        width: 100%;
+        margin-left: 0;
+    }
+    footer div>div:nth-child(2){
+        width: 100%;
+    }
+    footer div>div:last-child{
+        width: 100%;
+    }
+    footer div{
+        margin-bottom: 20px;
+    }
+    }
+
